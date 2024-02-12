@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E - Commerce Web Site</title>
+    <link rel="stylesheet" href="/ecommerce/html/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iKJE5lOz+e/pLbZwiSD3qEaBhd5tiSpv5u5qj2FQ9lF86DzB1RGmBnQG" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css.all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <section id="header">
+        <a href="#">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M20.485 3H16.4933L16.9933 8C16.9933 8 17.9933 9 19.4933 9C20.5703 9 21.3036 8.48445 21.6316 8.1937C21.7623 8.07782 21.8101 7.90091 21.7814 7.72861L21.0768 3.50136C21.0286 3.21205 20.7783 3 20.485 3Z" stroke="#000000" stroke-width="1.5"></path><path d="M16.4933 3L16.9933 8C16.9933 8 15.9933 9 14.4933 9C12.9933 9 11.9933 8 11.9933 8V3H16.4933Z" stroke="#000000" stroke-width="1.5"></path><path d="M11.9933 3V8C11.9933 8 10.9933 9 9.49329 9C7.99329 9 6.99329 8 6.99329 8L7.49329 3H11.9933Z" stroke="#000000" stroke-width="1.5"></path><path d="M7.49331 3H3.50158C3.20828 3 2.95797 3.21205 2.90975 3.50136L2.2052 7.72862C2.17649 7.90091 2.22432 8.07782 2.35502 8.1937C2.68294 8.48445 3.41626 9 4.49329 9C5.99329 9 6.99331 8 6.99331 8L7.49331 3Z" stroke="#000000" stroke-width="1.5"></path><path d="M3 9V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V9" stroke="#000000" stroke-width="1.5"></path><path d="M14.8333 21V15C14.8333 13.8954 13.9379 13 12.8333 13H10.8333C9.72874 13 8.83331 13.8954 8.83331 15V21" stroke="#000000" stroke-width="1.5" stroke-miterlimit="16"></path></svg>
+        </a>
+        <div>
+            <ul id="navbar">
+                
+                <li><a  href="../html/home.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a  nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </a>
+                    
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/shop.html">Woman</a></li>
+                    <li><a class="dropdown-item" href="../html/shopm.html">Man</a></li>
+                    <li><a class="dropdown-item" href="../html/shopt.html">Tech</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a class="active" href="../html/contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a href="../html/cart.html"><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M19.2609 9.69589L20.6455 18.6959C20.8319 19.9074 19.8945 21 18.6688 21H5.33122C4.10545 21 3.16809 19.9074 3.35448 18.6959L4.73909 9.69589C4.8892 8.72022 5.7287 8 6.71584 8H17.2842C18.2713 8 19.1108 8.72022 19.2609 9.69589Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span type="number" id="cartItemCount"></span> <!-- Ürün sayısını gösteren span -->
+                    </a>
+                </li>
+            <a href="#" id="close"><i class="far fa-times"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+        
+            </i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="../html/cart.html">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+                    <path d="M19.2609 9.69589L20.6455 18.6959C20.8319 19.9074 19.8945 21 18.6688 21H5.33122C4.10545 21 3.16809 19.9074 3.35448 18.6959L4.73909 9.69589C4.8892 8.72022 5.7287 8 6.71584 8H17.2842C18.2713 8 19.1108 8.72022 19.2609 9.69589Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14 5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span type="number" id="mobileCartItemCount"></span> <!-- Ürün sayısını gösteren span -->
+            </a>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+            <i id="bar" class="fas fa-outdent"><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6 5H18C20.2091 5 22 6.79086 22 9V15C22 17.2091 20.2091 19 18 19H6C3.79086 19 2 17.2091 2 15V9C2 6.79086 3.79086 5 6 5Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 10.75L12 13.25L9.5 10.75" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>   <span type="number" id="cartItemCount"></span> <!-- Ürün sayısını gösteren span --></i>
+        </div>
+    </section>
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <div class="getintouch">
+                <span>GET IN TOUCH</span>
+                <h2>Visit one of our agency locations or contact us today</h2>
+                <h3>Head Office</h3>
+                <div>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/>
+                          </svg><p>Chicago,Illinois</p>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                          </svg>
+                          </svg><p>elifzobaci@gmail.com</p>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                          </svg>
+                          </svg><p>+1 (453) 67 89</p>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                          </svg>
+                          </svg><p>09:00-18:00 Every Day</p>
+                    </li>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.4517889161!2d-88.06162727923211!3d41.83377336720056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2s%C5%9Eikago%2C%20Illinois!5e0!3m2!1str!2sus!4v1707601724680!5m2!1str!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section id="form-details">
+        <form class="custcon">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love hearing from you</h2>
+            <input type="text" id="fname" name="fname"  required placeholder="Your Firstname">
+            <input type="text" id="email" name="email" placeholder="Your E - Mail">
+            <input type="phone" id="phone" name="phone" required placeholder="Your Phone Number">
+            <textarea name="" id="message" name="message" cols="30" rows="10"  required placeholder="Your Message"></textarea>
+            <button class="normal">Submit</button>
+        </form>
+        <div class="people">
+            <br><br><br>
+            <div>
+                <img src="/ecommerce/photos/people/people1.jpg" alt="">
+                <p><span>Johny John</span>Senior Marketing Manager<br> Phone: + 000 123 000 77 88 <br>Email:contact@example.com <br></p>
+            </div>
+            <div>
+                <img src="/ecommerce/photos/people/people2.jpg" alt="">
+                <p><span>William Smith</span>Senior Marketing Manager<br> Phone: + 000 123 000 77 88 <br>Email:contact@example.com <br></p>
+            </div>
+            <div>
+                <img src="/ecommerce/photos/people/people3.jpg" alt="">
+                <p><span>Emma Stone</span>Senior Marketing Manager<br> Phone: + 000 123 000 77 88 <br>Email:contact@example.com <br></p>
+            </div>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="footer-bottom" >
+            <p>&copy; 2024 e-commerce Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="../html/script.js"></script>
+</body>
+</html>

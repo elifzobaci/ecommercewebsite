@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+#mobile a {
+    text-decoration: none; /* Remove underline */
+    font-size:16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition:0.3s ease;
+}
+#mobile a:hover {
+     color:#088178; /* Change link color on hover to blue (adjust as needed) */
+}
+#header{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 80px;
+ background-color: #E3E6F3;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+ z-index: 999;
+ position: sticky;
+ top: 0;
+ left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding:0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size:16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition:0.3s ease;
+}
+#navbar li button{
+    text-decoration: none;
+    font-size:16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition:0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color:#088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color:#088178 ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#hero {
+    text-align: center;
+    position: relative;
+}
+#myimage {
+    height: 90vh;
+    width: 100%;
+    background-position: top 50% right 0%;
+    background-size: cover;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* #myimage'nin pozisyonunu belirliyoruz */
+}
+#myimage h4 {
+    padding-bottom: 15px;
+    color: white;
+}
+#myimage h1 {
+    color: white;
+}
+.shop-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff6600; /* Customize the background color */
+    color: #fff; /* Customize the text color */
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;}
+#carouselExampleFade button {
+    padding: 12px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#carouselExampleFade{
+    cursor:pointer;
+}
+#hero button:hover {
+    background: #20B2AA;
+    color: #fff;
+}
+#hero h4{
+    padding-bottom: 15px;
+    color:white;
+}
+#hero h1{
+    color: white;
+}
+#hero button{
+    background-image: url("/ecommerce/photos/1111111111111111.jpg"); 
+    background-color: transparent;
+    color:#1a1a1a;
+    border:0;
+        /* padding: [üst] [sağ] [alt] [sol]; */
+    padding: auto auto auto auto;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 450px; /* İstediğiniz miktarı ayarlayın */
+}
+#myimage button:hover{
+    background: #088178;
+    color:#fff;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius:4px;
+    margin:15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+    display: inline-block;
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-of-type(3) h6 {
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-of-type(4) h6 {
+    background-color: #cdd4f8;
+}
+#product1{
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+}
+h2 {
+    font-size:46px;
+    line-height: 54px;
+    color: #222;
+}
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+.section-m1{
+    margin:40px 0;
+}
+body{
+    width: 100%;
+}
+#product1 .pro{
+    width:23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border:1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color:#606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color:#1a1a1a;
+    font-size:14px;
+}
+#product1 .pro .des .i{
+    font-size: 12px;
+    color: rgb(red, green, blue);
+}
+#product1 .pro .des  h4{
+    padding-top: 7px;
+    font-size:15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color:#088178;
+    border:1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap; 
+    /* flex-wrap: wrap diyerek tum gorsellerin yan yana gelmemesi saglandi */
+}
+.customerinfo {
+    max-width: 500px;
+    margin: auto;
+}
+#banner{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    background-image: url("/ecommerce/photos/back.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: white;
+    font-size:16px;
+}
+#banner h2{
+    color: white;
+    font-size:30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: #ffffe6;
+}
+button.normal{
+    font-size:14px;
+    font-weight: 600;
+    padding:15px 30px;
+    color:#000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    transition: 0.2s;
+}
+button.white{
+    font-size:13px;
+    font-weight: 600;
+    padding:11px 18px;
+    color:white;
+    background-color: transparent;
+    cursor:pointer;
+    border:1px solid white;
+    outline:none;
+    transition: 0.2s;
+}
+#banner button:hover{
+    background: #088178;
+    color:#fff;
+}
+#sm-banner .banner-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("/ecommerce/photos/makeupcover2.jpg");
+    min-width:500px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url("/elifkendisayfasi/resim.jpg");
+}
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner h4{
+    color:white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color:white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button{
+    background-color:   #088178;
+    border: 1px solid   #088178;
+}
+#contact {
+    padding: 40px 80px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 400px; */
+    margin: auto;
+    width: 60%; /* Or adjust the width as needed */
+    float: right;
+}
+label {
+    margin-bottom: 8px;
+}
+#contact form {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto; 
+}
+#form-details .custcon .input .success,
+#contact form .success{
+    border: 3px solid green;
+}
+#form-details form .error,
+#contact form .error{
+    border: 3px solid red;
+}
+.error{
+    border: 3px solid red;
+}
+.success{
+    border: 3px solid green;
+}
+
+#contact h2{
+    text-align: center;
+}
+input,
+textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 12px 20px;
+    background-color: #088178;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #065b61;
+}
+footer{
+    background-color:#E3E6F3 ; /* Footer rengi */
+  
+    padding: 20px 0;
+}
+i {
+    margin-right: 5px; /* Opsiyonel: İkon ile metin arasında bir boşluk bırakmak için */
+}
+#iframe{
+    max-width: 500px;
+    height: 375px;
+} 
+#page-header{
+    background-image: url("/ecommerce/photos/shopback.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: auto;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+.footer-bottom {
+    text-align: center;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.about-header{
+background-image: url("/ecommerce/Chicago.jpg");
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head div{
+    padding-left: 40px;
+}
+#about-app {
+    text-align: center;
+}
+#about-app .video{
+    width: 70%;
+    height: 50%;
+    margin:30px  auto 0 auto;
+}
+#about-app .video video{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+   font-size:26px;
+}
+#prodetails .single-pro-details select{
+    /* Bu, seçim kutusunun bir satırın tam genişliğini kaplamasını ve altındaki ve 
+    üstündeki diğer öğelerle uyumlu bir şekilde yerleşmesini sağlar. */
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size:16px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details input:focus{
+    /* focus CSS seçici, bir HTML öğesi üzerinde odaklandığınızda (tıkladığınızda veya tab tuşuyla odaklandığınızda) uygulanacak stil kurallarını belirtmek için kullanılır. */
+    outline: none;
+}
+#prodetails .single-pro-details  button{
+    background: #088178;
+    color: #fff;
+}
+#prodetails .single-pro-details  button:hover{
+    background-color: #065b61;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+#prodetails .single-pro-image .back{
+    margin-bottom:20px ;
+}
+#cart {
+    /* urunlerin alindigi kismin ekran kaydirilinca saga dogru kaydirilabilmesini saglar */
+    overflow-x: auto;
+}
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width: 70px;
+}
+#cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+#cart table tbody  td{
+    font-size:13px;
+}
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#coupon{
+width: 50%;
+margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal h3{
+padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width:60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+#coupon button,
+#subtotal button{
+    background-color: #088178;
+    color: white;
+    padding: 12px 20px ;
+}
+#coupon button:hover,
+#subtotal button:hover{
+    background-color: #065b61;
+}
+#subtotal{
+    width: 50%;
+    margin-bottom:30px;
+    border: 1px solid #e2e9e1; 
+    padding:30px ;
+}
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+#contact-details{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-details .details{
+    width: 90%;
+    display: flex;
+   
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contact-details .details span,
+#form-details form span{
+    font-size: 12px;
+}
+#contact-details .details .getintouch{
+    display: flex;
+    flex-direction: column;
+}
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding:80px;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+}
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom:15px ;
+}
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-details .details p{
+    margin: 0;
+    font-size: 14px;
+}
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+#form-details form button{
+    background-color: #088178;
+    color: #fff;
+}
+#form-details form button:hover {
+    background-color: #065b61;
+}
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    
+}
+#form-details .people div img{
+    width: 65px;
+    height: 85px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+#form-details .people div  p{
+    margin:0;
+    font-size: 13px;
+    line-height: 25px;
+}
+#form-details .people div  p span{
+    display: block;
+    font-size:16px;
+    font-weight: 600;
+    color:#000;
+}
+@media (max-width: 1170px) and (min-width: 799px) {
+    iframe {
+        margin-top: 20px; /* Adjust the margin-top as needed */
+        display: block; /* Ensure it's a block-level element */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
+        display:flex;
+    }
+    
+    #contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .customerinfo {
+        width: 70%; /* Adjust the width as needed */
+        max-width: 400px; /* Set a maximum width if necessary */
+        margin: 0 auto;
+    }
+    .col {
+        text-align: center; /* Center the text horizontally */
+        margin: 0 auto; /* Center the element horizontally */
+    }
+    #sm-banner .banner-box {
+        margin-left:auto;
+        margin-right: auto;
+        height: 100%;
+    }
+}
+
+
+@media (max-width:799px)  {
+    #form-details .people div{
+        padding-left: 20%;
+    }
+  
+    .col {
+        text-align: center; /* Center the text horizontally */
+        margin: 0 auto; /* Center the element horizontally */
+    }
+    .section-p1 {
+        padding: 40px 80px;
+    }
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 50px;
+    }
+    #coupon{
+        width: 100%;
+    } 
+    #subtotal{
+        width: 100%;
+    } 
+    #prodetails {
+        display: block;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+    #product1 .pro{
+        width: 100%;
+    }
+    #prodetails .single-pro-details h6{
+        font-size: 50px;
+        margin-top:30px;
+    }
+    #prodetails .single-pro-details h4{
+        font-size: 25px;
+    }
+    #prodetails .single-pro-details span {
+        font-size: larger;
+    }
+    #prodetails .single-pro-details select{
+        font-size: 30px;
+    }
+    #prodetails .single-pro-details input{
+        font-size: 30px;
+    }
+    #prodetails .single-pro-details button {
+        font-size: larger;
+    }
+    #about-head {
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 110%;
+        height: 100%;
+    }
+    #about-head h2{
+        margin-top:50px;
+    }
+    #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top:0;
+    right: -300px;;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+    /* padding: [üst] [sağ] [alt] [sol]; */
+    }
+  #navbar.active{
+    right: 0;
+  }
+  #navbar li{
+    margin-bottom: 25px;
+  }
+  #mobile{
+    display: flex;
+    align-items: center;
+    }
+    #mobile i {
+        color:#1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+        display: initial;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin:15px 15px;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+        margin: 15px;
+        margin-bottom: 20px; /* İstediğiniz boşluk miktarını burada ayarlayabilirsiniz */
+
+    }
+    #banner {
+        height: 45vh;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 100%;
+    }
+    #contact form {
+        width: 500%;
+    }
+    #footer .col{
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+    iframe {
+        max-width: 375px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+       
+}
+@media(max-width:477px){
+    #prodetails .single-pro-details input,
+    #prodetails .single-pro-details button,
+    #prodetails .single-pro-details select{
+        font-size: medium;
+    }
+    #form-details form{
+        margin:10%;
+    }
+    #form-details form input, 
+    #form-details form textarea {
+        width: 120%;
+    }
+    #contact-details .details{
+        flex-direction: column;
+    }
+    #form-details .people div{
+        display: none;
+    }
+    #form-details{
+        padding: 0px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #myimage {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #product1 .pro {
+        width:100%;
+    }
+    /* single product icin */
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+    /* cart page */
+    #cart-add {
+        flex-direction: column;
+    }
+
+    /* about page */
+    #about-head {
+        flex-direction: column;
+    }
+    #contact form {
+        width: 300%;
+        margin-right: -10vh;
+    }
+    iframe {
+        max-width: 260px;
+        margin-left: 0vh;
+        
+    }
+    #coupon{
+        width: 110%;
+    } 
+    #subtotal{
+        width: 100%;
+    } 
+    #prodetails .single-pro-details {
+        width:100%;
+    }
+    #prodetails .single-pro-details h6{
+        font-size:30px;
+    }
+    #prodetails .single-pro-details span {
+        font-size: larger;
+    }
+    #prodetails .single-pro-image {
+        width: 140%;
+        height: auto;
+        margin-left: -5.4vh;
+    }
+}
+
+/* border-collapse: collapse; CSS kodu, bir HTML tablosunun çerçevelerini belirleme ve düzenleme amacıyla kullanılır. Bu özellik, bir tablonun kenar çizgilerini birleştirip birleştirmeme durumunu kontrol eder.
+
+Bu özellik iki değer alabilir:
+
+collapse (birleştir): Bu değer, hücreler arasındaki çerçeve çizgilerini birleştirir. Yani, hücreler arasındaki dikey ve yatay çizgiler birleştirilir, tek bir çizgi olarak görünür. Bu genellikle daha düzenli ve sade bir görünüm sağlar. */
+
+/* separate (ayır): Bu değer, hücreler arasındaki çerçeve çizgilerini ayırır. Hücreler arasında hem dikey hem de yatay çizgiler görünür, her hücre kendi çerçevesine sahip olur. Bu durumda, her hücrede kendi kenar çizgileri olduğu için görüntü daha ayrık ve detaylı olabilir. */

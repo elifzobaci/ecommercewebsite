@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E - Commerce Web Site</title>
+    <link rel="stylesheet" href="../html/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iKJE5lOz+e/pLbZwiSD3qEaBhd5tiSpv5u5qj2FQ9lF86DzB1RGmBnQG" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css.all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <section id="header">
+        <a href="#">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M20.485 3H16.4933L16.9933 8C16.9933 8 17.9933 9 19.4933 9C20.5703 9 21.3036 8.48445 21.6316 8.1937C21.7623 8.07782 21.8101 7.90091 21.7814 7.72861L21.0768 3.50136C21.0286 3.21205 20.7783 3 20.485 3Z" stroke="#000000" stroke-width="1.5"></path><path d="M16.4933 3L16.9933 8C16.9933 8 15.9933 9 14.4933 9C12.9933 9 11.9933 8 11.9933 8V3H16.4933Z" stroke="#000000" stroke-width="1.5"></path><path d="M11.9933 3V8C11.9933 8 10.9933 9 9.49329 9C7.99329 9 6.99329 8 6.99329 8L7.49329 3H11.9933Z" stroke="#000000" stroke-width="1.5"></path><path d="M7.49331 3H3.50158C3.20828 3 2.95797 3.21205 2.90975 3.50136L2.2052 7.72862C2.17649 7.90091 2.22432 8.07782 2.35502 8.1937C2.68294 8.48445 3.41626 9 4.49329 9C5.99329 9 6.99331 8 6.99331 8L7.49331 3Z" stroke="#000000" stroke-width="1.5"></path><path d="M3 9V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V9" stroke="#000000" stroke-width="1.5"></path><path d="M14.8333 21V15C14.8333 13.8954 13.9379 13 12.8333 13H10.8333C9.72874 13 8.83331 13.8954 8.83331 15V21" stroke="#000000" stroke-width="1.5" stroke-miterlimit="16"></path></svg>
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="../html/home.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="active" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../html/shop.html">Woman</a></li>
+                      <li><a class="dropdown-item" href="../html/shopm.html">Man</a></li>
+                      <li><a class="dropdown-item" href="../html/shopt.html">Tech</a></li>
+                    </ul>
+                  </li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a href="../html/cart.html"><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M19.2609 9.69589L20.6455 18.6959C20.8319 19.9074 19.8945 21 18.6688 21H5.33122C4.10545 21 3.16809 19.9074 3.35448 18.6959L4.73909 9.69589C4.8892 8.72022 5.7287 8 6.71584 8H17.2842C18.2713 8 19.1108 8.72022 19.2609 9.69589Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span type="number" id="cartItemCount"></span> <!-- Ürün sayısını gösteren span -->
+                    </a>
+                </li>
+               <a href="#" id="close"><i class="far fa-times"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+              </svg>
+            </i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="../html/cart.html">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+                    <path d="M19.2609 9.69589L20.6455 18.6959C20.8319 19.9074 19.8945 21 18.6688 21H5.33122C4.10545 21 3.16809 19.9074 3.35448 18.6959L4.73909 9.69589C4.8892 8.72022 5.7287 8 6.71584 8H17.2842C18.2713 8 19.1108 8.72022 19.2609 9.69589Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14 5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span type="number" id="mobileCartItemCount"></span> <!-- Ürün sayısını gösteren span -->
+            </a>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+            <i id="bar" class="fas fa-outdent"><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6 5H18C20.2091 5 22 6.79086 22 9V15C22 17.2091 20.2091 19 18 19H6C3.79086 19 2 17.2091 2 15V9C2 6.79086 3.79086 5 6 5Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 10.75L12 13.25L9.5 10.75" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></i>
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <button class="back" onclick="window.location.href='../html/shopm.html'">Back</button>
+            <img src="/ecommerce/photos/gloves.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="" width="100%"class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Men / Accessories</h6>
+            <h4>Men's Accessories / Cartier Gloves</h4>
+            <h2>$60</h2>
+            <input type="number" id="quantityInput" value="1">
+            <button class="normal" onclick=addToCartWithoutSize()>Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde temporibus minus commodi dignissimos qui cum, et consequatur distinctio rem! Quis nulla similique saepe reiciendis sed ullam dolore error velit aliquid?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis iste ad voluptatem perspiciatis, ullam officiis, in eum aut laborum est cum cupiditate dignissimos sunt modi veniam magnam, odit reiciendis.</span>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="footer-bottom" >
+            <p>&copy; 2024 e-commerce Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="../html/script.js"></script>
+</body>
+</html>
