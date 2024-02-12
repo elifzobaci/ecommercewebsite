@@ -134,7 +134,7 @@ p{
     color: white;
 }
 #hero button{
-    background-image: url("/ecommerce/photos/1111111111111111.jpg"); 
+    background-image: url("/photos/1111111111111111.jpg"); 
     background-color: transparent;
     color:#1a1a1a;
     border:0;
@@ -284,7 +284,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align:center;
-    background-image: url("/ecommerce/photos/back.jpg");
+    background-image: url("/photos/back.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -334,7 +334,7 @@ button.white{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("/ecommerce/photos/makeupcover2.jpg");
+    background-image: url("/photos/makeupcover2.jpg");
     min-width:500px;
     height: 50vh;
     background-size: cover;
@@ -342,7 +342,7 @@ button.white{
     padding: 30px;
 }
 #sm-banner .banner-box2{
-    background-image: url("/elifkendisayfasi/resim.jpg");
+    background-image: url("/photos/resim.jpg");
 }
 #sm-banner {
     display: flex;
@@ -440,7 +440,7 @@ i {
     height: 375px;
 } 
 #page-header{
-    background-image: url("/ecommerce/photos/shopback.jpg");
+    background-image: url("/photos/shopback.jpg");
     width: 100%;
     height: 40vh;
     background-size: auto;
